@@ -6,6 +6,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="src/coronaAPI.js"></script>
+<script src="src/Panels.js"></script>
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
@@ -90,88 +95,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Summary Section -->
   <!-- Desktop -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" style="margin-top:-50px;" id="summary">
-    <h2 class="w3-text-light-grey" style="text-align: center;margin-bottom: 20px;font-size: 40px;"><i class="fa fa-dashboard"></i> SUMMARY</h2>
-    
-    <div class="containerDesktop w3-hide-small" >
-      <div class="summary">
-        <ul class="w3-ul w3-center">
-          <li class="w3-blue-grey w3-large "><strong>RECOVERED</strong></li>
-          <li class="w3-pale-green">
-            <h4>158,783</h4>
-            <p>Cases</p>
-          </li> 
-        </ul>
-      </div>
-      <div class="summary">
-        <ul class="w3-ul w3-center">
-          <li class="w3-blue-grey w3-large "><strong>TOTAL</strong></li>
-          <li class="w3-pale-yellow">
-            <h4>752,861</h4>
-            <p>Cases</p>
-          </li> 
-        </ul>
-      </div>
-      <div class="summary">
-        <ul class="w3-ul w3-center">
-          <li class="w3-blue-grey w3-large"><strong>DEATHS</strong></li>
-          <li style="background-color:lightsalmon">
-            <h4 style="color: black;">36,239</h4>
-            <p style="color: black;">Cases</p>
-          </li> 
-        </ul>
-      </div>
-      
-    </div>
-
-    <div class="containerMobile w3-hide-large w3-hide-medium">
-      <div class="summary">
-        <ul class="w3-ul w3-center">
-          <li class="w3-blue-grey "><strong>TOTAL</strong></li>
-          <li class="w3-pale-yellow">
-            <h4>752,861</h4>
-            <p>Cases</p>
-          </li> 
-        </ul>
-      </div>
-      <div class="summary">
-        <ul class="w3-ul">
-          <li class="w3-blue-grey "><strong>RECOVERED</strong></li>
-          <li class="w3-pale-green">
-            <h4>158,783</h4>
-            <p>Cases</p>
-          </li> 
-        </ul>
-      </div>
-      <div class="summary">
-        <ul class="w3-ul w3-center">
-          <li class="w3-blue-grey "><strong>DEATHS</strong></li>
-          <li style="background-color:lightsalmon">
-            <h4 style="color: black;">36,239</h4>
-            <p style="color: black;">Cases</p>
-          </li> 
-        </ul>
-      </div>
-    </div>
-    
-    <div class="containerActiveClosed" style="margin-top: 50px;">
-      <div class="w3-center w3-pale-red" style="border:1px;border-radius: 10px;">
-        <div class="w3-center" style="margin-top: 10px;">
-          <h7><strong>ACTIVE CASES</strong></h7>
-        </div>
-        <div class="w3-clear"></div>
-        <h5>557,839</h5>
-      </div>
-      <div class="w3-center w3-khaki" style="border:1px;border-radius: 10px;">
-        <div class="w3-center" style="margin-top: 10px;">
-          <h7><strong>CLOSED CASES</strong></h7>
-        </div>
-        <div class="w3-clear"></div>
-        <h5>195,022</h5>
-      </div>
-    </div>
   </div>
 
 </div>
-
+<script src="src/App.js"></script>
 </body>
 </html>
