@@ -1,0 +1,34 @@
+.summary li
+  {
+    text-align: center;
+    padding:8px 10px;
+  }
+
+  .containerDesktop {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-gap: 10px;
+  }
+  .containerMobile
+  {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0.01em;
+    grid-gap: 10px;
+    width: 100%;
+  }
+
+  .containerActiveClosed {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0.01em;
+    grid-gap: 10px;
+    width: 100%;
+  }
+  
+  .scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+  }
