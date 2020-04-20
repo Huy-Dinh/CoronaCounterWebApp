@@ -11,7 +11,9 @@ export class LiveCounterDisplay extends React.Component {
             content : {
                 name: 'World',
                 caseCount: 0,
+                newCaseCount: 0,
                 deathCount: 0,
+                newDeathCount: 0,
                 recoveredCount: 0
             }
         }
@@ -25,7 +27,9 @@ export class LiveCounterDisplay extends React.Component {
             {
                 content : {
                     caseCount: data.cases,
+                    newCaseCount: data.todayCases,
                     deathCount: data.deaths,
+                    newDeathCount: data.todayDeaths,
                     recoveredCount: data.recovered
                 }
             }
@@ -51,7 +55,9 @@ export class LiveCounterDisplay extends React.Component {
                 </select>
                 <PlainTextCounterDisplay
                     caseCount = {this.state.content.caseCount}
+                    newCaseCount = {this.state.content.newCaseCount}
                     deathCount = {this.state.content.deathCount}
+                    newDeathCount = {this.state.content.newDeathCount}
                     recoveredCount = {this.state.content.recoveredCount}
                 />
             </div>
